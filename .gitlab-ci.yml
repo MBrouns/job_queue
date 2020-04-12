@@ -1,0 +1,11 @@
+image: python:3.8
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - pip install .
+    - flake8
+    - pytest
